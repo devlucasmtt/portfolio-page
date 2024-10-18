@@ -3,72 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
     <title>Portfólio do Desenvolvedor</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <ul id="menu">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
+        <div class="foto-de-desenvolvedor">
+            <img src="sua-foto.jpg" alt="Foto do Desenvolvedor">
+        </div>
     </header>
 
-    <section id="sobre">
-        <div class="container">
-            <img src="sua-foto.jpg" alt="Foto do Desenvolvedor" class="foto-perfil">
-            <h1>Olá, eu sou [Seu Nome]</h1>
-            <p>Desenvolvedor apaixonado por tecnologia e inovação. Tenho habilidades em JavaScript, React, Node.js e muito mais!</p>
-        </div>
-    </section>
+    <main>
+        <section id="sobre">
+            <h1>Sobre Mim</h1>
+            <p>Descrição sobre o desenvolvedor.</p>
+        </section>
 
-    <section id="projetos">
-        <div class="container">
+        <section id="projetos">
             <h2>Meus Projetos</h2>
-            <div class="projetos">
-                <div class="projeto ativo" id="projeto1">
-                    <img src="projeto1.jpg" alt="Projeto 1">
-                    <h3>Projeto 1</h3>
-                    <p>O projeto "To-Do List" é uma aplicação web que permite gerenciar tarefas diárias de forma simples e eficiente. Os usuários podem adicionar, editar, remover e marcar tarefas como concluídas, além de incluir descrições detalhadas para cada uma. As tarefas são armazenadas localmente, garantindo que as informações sejam mantidas após o fechamento do navegador. Este projeto destaca habilidades em JavaScript e manipulação de DOM, visando melhorar a organização e a produtividade.Tecnologias: HTML, CSS, JavaScript.</p>
-                    <a href="https://devlucasmtt.github.io/To-Do-List/" target="_blank">Ver no GitHub</a>
+            <div class="carrossel">
+                <button id="prev">❮</button>
+                <div class="projetos">
+                    <!-- Projetos serão injetados aqui pelo JavaScript -->
                 </div>
-                <div class="projeto" id="projeto2">
-                    <img src="projeto2.jpg" alt="Projeto 2">
-                    <h3>Projeto 2</h3>
-                    <p>Descrição do Projeto 2. Tecnologias: React, Node.js.</p>
-                    <a href="https://github.com/seuusuario/projeto2" target="_blank">Ver no GitHub</a>
-                </div>
-                <div class="projeto" id="projeto3">
-                    <img src="projeto3.jpg" alt="Projeto 3">
-                    <h3>Projeto 3</h3>
-                    <p>Descrição do Projeto 3. Tecnologias: Python, Django.</p>
-                    <a href="https://github.com/seuusuario/projeto3" target="_blank">Ver no GitHub</a>
-                </div>
+                <button id="next">❯</button>
             </div>
-            <button class="nav-button" onclick="mostrarProjeto('projeto1')">Projeto 1</button>
-            <button class="nav-button" onclick="mostrarProjeto('projeto2')">Projeto 2</button>
-            <button class="nav-button" onclick="mostrarProjeto('projeto3')">Projeto 3</button>
-        </div>
-    </section>
+        </section>
 
-    <section id="contato">
-        <div class="container">
+        <section id="contato">
             <h2>Contato</h2>
-            <p>Sinta-se à vontade para conectar-se comigo!</p>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/seuusuario" target="_blank">
-                    <img src="linkedin-icon.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/seuusuario" target="_blank">
-                    <img src="github-icon.png" alt="GitHub">
-                </a>
-            </div>
-        </div>
-    </section>
+            <p>Email: seu-email@example.com</p>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
